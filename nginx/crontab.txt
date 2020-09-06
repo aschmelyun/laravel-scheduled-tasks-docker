@@ -1,0 +1,2 @@
+PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
+* * * * * cd /Users/andrew/Sites/laravel-scheduled-docker.test && docker-compose run --rm artisan schedule:run >/Users/andrew/Sites/laravel-scheduled-docker.test/src/storage/logs/cron.log 2>/Users/andrew/Sites/laravel-scheduled-docker.test/src/storage/logs/cron.log
