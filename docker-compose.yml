@@ -11,7 +11,6 @@ services:
     container_name: nginx
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - ./src:/var/www/html
     depends_on:
@@ -61,7 +60,7 @@ services:
       - laravel
 
   npm:
-    image: node:13.7
+    image: node:13.7.0-slim
     container_name: npm
     volumes:
       - ./src:/var/www/html
